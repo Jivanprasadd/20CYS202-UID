@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+
+<body>
+    <div class="regform">
+        <h1>Registration Form</h1>
+    </div>
+    <div class="main">
+
+        <form method="POST">
+            <h2 class="name"> Name</h2>
+            <input class="firstname" type="text" id ="cname" onchange="NameCheck()"  name="name">
+            <h2 class="name"> College Name </h2>
+            <input class="collegename" type="text" id="cname" onchange="NameCheck()" name="collegename">
+            <h2 class="name">Date of Arrival</h2>
+            <input class="datepicker" type="date" name="datepicker">
+            <h2 class="name"> Email</h2>
+            <input class="email" type="email" id="email" onchange="ValidateEmail()" name="email">
+            <h2 class="name"> Phone</h2>
+            <input class="Code" type="text" name="area_code">
+            <label class="area-code">Area Code</label>
+            <input class="number" type="text" id="phonenumber" onchange="PhoneNumberCheck()" name="phone">
+            <label class="phone-number">Phone Number</label>
+
+
+            <h2 class="name">Events:</h2>
+            <select class="option" name="subject">
+                <option disabled="disabled" selected="selected">--Choose option--</option>
+                <option>Singing</option>
+                <option>Dancing</option>
+                <option>Quiz</option>
+                <option>Ctfs</option>
+                <option>Hackathons</option>
+                <option>Skit/Meme</option>
+            </select>
+          
+            <h2 id="coustomer">Gender</h2>
+            <label class="radio">
+                <input class="radio-one" type="radio" checked="checked" name="rdiobtn">
+                <span class="checkmark"></span>
+                Male
+            </label>
+
+            <label class="radio">
+                <input class="radio-two" type="radio" name="rdiobtn">
+                <span class="checkmark"></span>
+                Female
+            </label>
+
+            <label class="radio">
+              <input class="radio-two" type="radio" name="rdiobtn">
+              <span class="checkmark"></span>
+              Others
+          </label>
+
+            <button type="submit">Submit</button>
+
+
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
