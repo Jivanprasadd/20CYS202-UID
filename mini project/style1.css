@@ -16,7 +16,7 @@ body{
 }
 ::selection{
   color: #fff;
-  background: #f34242;
+  background: #f27373;
 }
 .wrapper{
   width: 380px;
@@ -72,11 +72,11 @@ form input{
 }
 form .field input:focus,
 form .field.valid input{
-  border-color: #f34242;
+  border-color: #ed6666;
 }
 form .field.shake input,
 form .field.error input{
-  border-color: #dc3545;
+  border-color: #d65662;
 }
 .field .input-area i{
   position: absolute;
@@ -92,11 +92,11 @@ form .field.error input{
 }
 .input-area .error-icon{
   right: 15px;
-  color: #dc3545;
+  color: #da5563;
 }
 form input:focus ~ .icon,
 form .field.valid .icon{
-  color: #f34242;
+  color: #ee6969;
 }
 form .field.shake input:focus ~ .icon,
 form .field.error input:focus ~ .icon{
@@ -107,7 +107,7 @@ form input::placeholder{
   font-size: 17px;
 }
 form .field .error-txt{
-  color: #dc3545;
+  color: #db6470c1;
   text-align: left;
   margin-top: 5px;
 }
@@ -123,7 +123,7 @@ form .pass-txt{
   margin-top: -10px;
 }
 .wrapper a{
-  color: #00C9A7;
+  color: #f06565;
   text-decoration: none;
 }
 .wrapper a:hover{
@@ -135,7 +135,7 @@ form input[type="submit"]{
   color: #fff;
   padding: 0;
   border: none;
-  background: #f34242;
+  background: #db4b4b;
   cursor: pointer;
   border-bottom: 2px solid rgba(0,0,0,0.1);
   transition: all 0.3s ease;
