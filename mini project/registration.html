@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap');
+      body{
+      background: #191d30;
+      background: -webkit-linear-gradient(to right, #36a494, #71bfab);
+      background: linear-gradient(to right, #36a494, #71bfab);
+      font-family: 'Poppins', sans-serif;
+      }
+      .bg-custom{
+      background: #191d30;
+      }
+      .bg-custom-form{
+      background: #f34242ed;
+      }
+      h1{
+      top: 25%;
+      text-align: center;
+      position: relative;
+      font-size: 100px;
+      text-transform: uppercase;
+      line-height: 140px;
+      letter-spacing: 4px;
+      }
+      h1,p,label{
+      color: #fff;
+      }
+      label{
+      margin: 5px 0px;
+      }
+      .form-control{
+      outline: none;
+      border: none;
+      background: none;
+      border-bottom: 1px solid #fff;
+      border-radius: 0px !important;
+      }
+      .form-control:focus,.form-control:hover{
+      border:none;
+      margin: 0 auto;
+      background: none;
+      box-shadow: none;
+      border-bottom: 1px solid #4ed4b4;
+      }
+      .btn{
+      border-radius: 0px;
+      }
+      .btn-custom,.btn-custom:focus{
+      background: #4ed4b4;
+      border-color: #4ed4b4;
+      color: #fff;
+      box-shadow: none;
+      }
+      .btn-custom:hover{
+      background: #3aa696;
+      color: #fff;
+      }
+      @media(max-width:768px){
+      .none{
+      display: none;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container ">
+      <h2 class="text-center text-white p-2 pt-4">Register</h2>
+      <div class="row m-4">
+        <div class="col-md-6 col-sm-12 bg-custom none">
+          <h1 class="text-center pt-3">ABC BANK</h1>
+        </div>
+        <div class="col-md-6 col-sm-12 bg-custom-form">
+          <p class="text-center mb-0 pt-4">Create an account</p>
+          <form action="#" class="p-3">
+            <div class="form-group">
+              <label for="name">NAME</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="username">USERNAME</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">EMAIL</label>
+              <input type="password" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="pwd">PASSWORD</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">CONFIRM PASSWORD</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-custom mb-3 mt-3">CREATE ACCOUNT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
