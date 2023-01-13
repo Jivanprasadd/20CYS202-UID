@@ -13,10 +13,10 @@
   <div class="container">
   <div class="wrapper">
     <header>Login Form</header>
-    <form action="../html/menu.html">
+    <form id="form" action="../html/menu.html">
       <div class="field email">
         <div class="input-area">
-          <input type="text" placeholder="Email Address">
+          <input type="text" placeholder="Email Address" id="eml" onchange="subbut()" required>
           <i class="icon fas fa-envelope"></i>
           <i class="error error-icon fas fa-exclamation-circle"></i>
         </div>
@@ -24,15 +24,44 @@
       </div>
       <div class="field password">
         <div class="input-area">
-          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Password" id="pwd" required>
           <i class="icon fas fa-lock"></i>
           <i class="error error-icon fas fa-exclamation-circle"></i>
         </div>
         <div class="error error-txt">Password can't be blank</div>
       </div>
       <div class="pass-txt"><a href="#">Forgot password?</a></div>
-      <input type="submit">
+      <input type="submit"   onclick="subbut()">
       <br>
     <div class="sign-txt">Not a member? <a href="registration.html">Signup now</a></div>
+    </form>
+    <script>
+      function subbut(){
+      var flag=0;
+      var u2 = document.getElementById("pwd").value;
+      var u4 = document.getElementById("eml").value;
+      var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    
+        if(!(u4.match(validRegex)))
+            {
+                alert("Invalid email address!");
+          document.getElementById("eml").focus();
+          flag=1;
+            }
+        
+      
+      if(flag==0){
+        
+      }
+    }
+      
+  </script>
+    <br>
+    <footer style="text-align: center;">
+      <p style="color: white;">Copyright © 2022-2023- Jivan Prasadd P, Sudhir RT.
+          II B.Tech CSE (CYS)
+          Part of 20CYS202 - User Interface Design
+          Amrita Vishwa Vidyapeetham, Coimbatore</p>
+    </footer>
 </body>
 </html>
